@@ -1,0 +1,21 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column about, -->
+<!-- add the following to the about_init() hook (in hooks/about.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+<td id="about-website_name-<%%VALUE(id)%%>" class="about-website_name"><%%SELECT%%><%%VALUE(website_name)%%><%%ENDSELECT%%></td>
+<td id="about-tagline-<%%VALUE(id)%%>" class="about-tagline"><%%SELECT%%><%%VALUE(tagline)%%><%%ENDSELECT%%></td>
+<td id="about-icon-<%%VALUE(id)%%>" class="about-icon"><%%SELECT%%><img src="thumbnail.php?i=<%%VALUE(icon)%%>&t=about&f=icon&v=tv" class="img-thumbnail"><%%ENDSELECT%%></td>
+<td id="about-keywords-<%%VALUE(id)%%>" class="about-keywords"><%%SELECT%%><%%VALUE(keywords)%%><%%ENDSELECT%%></td>
+<td id="about-short_description-<%%VALUE(id)%%>" class="about-short_description"><%%SELECT%%><%%VALUE(short_description)%%><%%ENDSELECT%%></td>
+<td id="about-detailed_description-<%%VALUE(id)%%>" class="about-detailed_description"><%%SELECT%%><%%VALUE(detailed_description)%%><%%ENDSELECT%%></td>
+<td id="about-bannertext1-<%%VALUE(id)%%>" class="about-bannertext1"><%%SELECT%%><%%VALUE(bannertext1)%%><%%ENDSELECT%%></td>
+<td id="about-bannertext2-<%%VALUE(id)%%>" class="about-bannertext2"><%%SELECT%%><%%VALUE(bannertext2)%%><%%ENDSELECT%%></td>
+<td id="about-bannertext3-<%%VALUE(id)%%>" class="about-bannertext3"><%%SELECT%%><%%VALUE(bannertext3)%%><%%ENDSELECT%%></td>
+<td id="about-bannertext4-<%%VALUE(id)%%>" class="about-bannertext4"><%%SELECT%%><%%VALUE(bannertext4)%%><%%ENDSELECT%%></td>
+<td id="about-address-<%%VALUE(id)%%>" class="about-address"><%%SELECT%%><%%VALUE(address)%%><%%ENDSELECT%%></td>
+<td id="about-email-<%%VALUE(id)%%>" class="about-email"><a href="mailto:<%%VALUE(email)%%>" title="<%%VALUE(email)%%>" class="btn btn-default"><i class="glyphicon glyphicon-envelope text-info"></i></a></td>
+<td id="about-phone-<%%VALUE(id)%%>" class="about-phone"><%%SELECT%%><%%VALUE(phone)%%><%%ENDSELECT%%></td>
+<td id="about-googlemap-<%%VALUE(id)%%>" class="about-googlemap"><%%SELECT%%><img src="<%%GOOGLEMAPTHUMB(googlemap)%%>" style="max-width: 50px; max-height: 50px; " ><%%ENDSELECT%%></td>

@@ -1,0 +1,15 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the magazines_init() hook (in hooks/magazines.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+<td id="magazines-title-<%%VALUE(id)%%>" class="magazines-title"><%%VALUE(title)%%></td>
+<td id="magazines-category-<%%VALUE(id)%%>" class="magazines-category"><%%VALUE(category)%%></td>
+<td id="magazines-tags-<%%VALUE(id)%%>" class="magazines-tags"><%%VALUE(tags)%%></td>
+<td id="magazines-content-<%%VALUE(id)%%>" class="magazines-content"><%%VALUE(content)%%></td>
+<td id="magazines-photo-<%%VALUE(id)%%>" class="magazines-photo"><a href="<%%TRANSLATION(ImageFolder)%%><%%VALUE(photo)%%>" data-lightbox="magazines-photo"><img src="thumbnail.php?i=<%%VALUE(photo)%%>&t=magazines&f=photo&v=tv" class="img-thumbnail"></a></td>
+<td id="magazines-date-<%%VALUE(id)%%>" class="magazines-date"><%%VALUE(date)%%></td>
+<td id="magazines-author-<%%VALUE(id)%%>" class="magazines-author"><%%VALUE(author)%%></td>
+<td id="magazines-posted-<%%VALUE(id)%%>" class="magazines-posted"><%%VALUE(posted)%%></td>

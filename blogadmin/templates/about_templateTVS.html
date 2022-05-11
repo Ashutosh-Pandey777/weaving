@@ -1,0 +1,21 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column about, -->
+<!-- add the following to the about_init() hook (in hooks/about.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+<td id="about-website_name-<%%VALUE(id)%%>" class="about-website_name"><%%VALUE(website_name)%%></td>
+<td id="about-tagline-<%%VALUE(id)%%>" class="about-tagline"><%%VALUE(tagline)%%></td>
+<td id="about-icon-<%%VALUE(id)%%>" class="about-icon"><img src="thumbnail.php?i=<%%VALUE(icon)%%>&t=about&f=icon&v=tv" class="img-thumbnail"></td>
+<td id="about-keywords-<%%VALUE(id)%%>" class="about-keywords"><%%VALUE(keywords)%%></td>
+<td id="about-short_description-<%%VALUE(id)%%>" class="about-short_description"><%%VALUE(short_description)%%></td>
+<td id="about-detailed_description-<%%VALUE(id)%%>" class="about-detailed_description"><%%VALUE(detailed_description)%%></td>
+<td id="about-bannertext1-<%%VALUE(id)%%>" class="about-bannertext1"><%%VALUE(bannertext1)%%></td>
+<td id="about-bannertext2-<%%VALUE(id)%%>" class="about-bannertext2"><%%VALUE(bannertext2)%%></td>
+<td id="about-bannertext3-<%%VALUE(id)%%>" class="about-bannertext3"><%%VALUE(bannertext3)%%></td>
+<td id="about-bannertext4-<%%VALUE(id)%%>" class="about-bannertext4"><%%VALUE(bannertext4)%%></td>
+<td id="about-address-<%%VALUE(id)%%>" class="about-address"><%%VALUE(address)%%></td>
+<td id="about-email-<%%VALUE(id)%%>" class="about-email"><a href="mailto:<%%VALUE(email)%%>" title="<%%VALUE(email)%%>" class="btn btn-default"><i class="glyphicon glyphicon-envelope text-info"></i></a></td>
+<td id="about-phone-<%%VALUE(id)%%>" class="about-phone"><%%VALUE(phone)%%></td>
+<td id="about-googlemap-<%%VALUE(id)%%>" class="about-googlemap"><img src="<%%GOOGLEMAPTHUMB(googlemap)%%>" style="max-width: 50px; max-height: 50px; " ></td>

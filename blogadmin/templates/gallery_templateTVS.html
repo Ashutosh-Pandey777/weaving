@@ -1,0 +1,15 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the gallery_init() hook (in hooks/gallery.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+<td id="gallery-title-<%%VALUE(id)%%>" class="gallery-title"><%%VALUE(title)%%></td>
+<td id="gallery-category-<%%VALUE(id)%%>" class="gallery-category"><%%VALUE(category)%%></td>
+<td id="gallery-tags-<%%VALUE(id)%%>" class="gallery-tags"><%%VALUE(tags)%%></td>
+<td id="gallery-content-<%%VALUE(id)%%>" class="gallery-content"><%%VALUE(content)%%></td>
+<td id="gallery-photo-<%%VALUE(id)%%>" class="gallery-photo"><a href="<%%TRANSLATION(ImageFolder)%%><%%VALUE(photo)%%>" data-lightbox="gallery-photo"><img src="thumbnail.php?i=<%%VALUE(photo)%%>&t=gallery&f=photo&v=tv" class="img-thumbnail"></a></td>
+<td id="gallery-date-<%%VALUE(id)%%>" class="gallery-date"><%%VALUE(date)%%></td>
+<td id="gallery-author-<%%VALUE(id)%%>" class="gallery-author"><%%VALUE(author)%%></td>
+<td id="gallery-posted-<%%VALUE(id)%%>" class="gallery-posted"><%%VALUE(posted)%%></td>
